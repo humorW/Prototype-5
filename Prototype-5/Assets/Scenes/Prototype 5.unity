@@ -603,13 +603,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 42
-  m_fontSizeBase: 42
+  m_fontSize: 36
+  m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 18
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -852,7 +852,7 @@ MonoBehaviour:
   - {fileID: 2415521109438570825, guid: 9cdbf63e9c70e4e4ba25ed6fd600b3d0, type: 3}
   - {fileID: 884150667184892872, guid: 054766c64df6942a0bbfe65f90ee9b32, type: 3}
   - {fileID: 7546235050024556689, guid: 32a080df983c74452adfd7f4332cdd8a, type: 3}
-  scoreText: {fileID: 0}
+  scoreText: {fileID: 1175493688}
 --- !u!4 &1826620884
 Transform:
   m_ObjectHideFlags: 0
