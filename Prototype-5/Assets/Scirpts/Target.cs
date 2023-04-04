@@ -12,6 +12,7 @@ public class Target : MonoBehaviour
     private float xRange = 4;
     private float ySpawnPos = -6;
     
+    public ParticleSystem exlosionParticle;
     public int pointValue;
     
     // Start is called before the first frame update
@@ -35,14 +36,21 @@ public class Target : MonoBehaviour
     private void OnMouseDown()
     {
         Destroy(gameObject);
+        Instantiate(exlosionParticle, transform.position, exlosionParticle.transform.rotation);
         gameManager.UpdateScore(pointValue);
     }
 
     private void OnTriggerEnter(Collider other)
     {
         Destroy(gameObject);
-    }
 
+        if(!gameObject.CompareTag("Bad"))
+        {
+            gameManager.GameOver();
+        }
+    }
+   
+   
     Vector3 randmForce()
     {
         return Vector3.up * Random.Range(minSpeed, maxSpeed);
